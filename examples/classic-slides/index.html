@@ -38,6 +38,7 @@
         This file contains styles specific for this example presentation. 
     -->
     <link href="css/classic-slides.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     
 </head>
 
@@ -77,7 +78,7 @@
     automatically moves to next slide. It can also be set individually for each
     slide, but here we just set a common duration for all slides.
 -->
-<div id="impress" data-transition-duration="1000" data-autoplay="10">
+<div id="impress" data-transition-duration="1000" data-autoplay="0">
 
     <!--
         Each step of the presentation should be an element inside the `#impress` with a class name
@@ -101,8 +102,8 @@
         powerpoint slide show. The "slide" class is entirely optional and indeed you wouldn't use it for
         your cooler impress.js presentations.
     -->
-    <div class="step slide title" data-x="-1000" data-y="-1500">
-        <h1>Example Presentation: <br />
+    <div class="step slide title" id="title" data-x="-1000" data-y="-1500">
+<!--         <h1>Example Presentation: <br />
             Classic Slides</h1>
         <h2>Henrik Ingo</h2>
         <h3>2015</h3>
@@ -111,7 +112,12 @@
         Any element with the class="notes" will not be displayed. This can
         be used for speaker notes. In fact, the impressConsole plugin will
         show it in the speaker console!
-        </div>
+        </div> -->
+
+                <span class="short">前端分享之</span>
+        <h1>
+                <span class="transforms">动画效果展示</span>
+            </h1>
     </div>
 
     <div id="toc" class="step slide" data-rel-x="1000" data-rel-y="0">
@@ -175,7 +181,7 @@
         element should be rotated by 30 degrees clockwise.        
     -->
     <div class="step slide" data-rel-x="1100" data-rel-y="300" data-rotate="30">
-        <h1>A blockquote &amp; image</h1>
+<!--         <h1>A blockquote &amp; image</h1>
         <img src="images/3476636111_c551295ca4_b.jpg" 
              alt="Mother Teresa holding a newborn baby" 
              class="right"/>
@@ -186,11 +192,12 @@
         </blockquote>
 
         <div class="notes">
-        </div>
+        </div> -->
+        <iframe style="height:100%;width:100%;" src="https://aaron-xue.github.io/html5demoes/particle/index.html" frameborder="0"></iframe>
     </div>
 
     <div class="step slide" data-rel-x="800" data-rel-y="800" data-rotate="60">
-        <h1>More text styles</h1>
+<!--         <h1>More text styles</h1>
         <p>As usual, use <em>em</em> to emphasize, <br />
            <strong>strong</strong> for strong, <u>u</u> for underline,<br />
            <strike>strike</strike> for strikethrough and <q>q for inline quotations</q>.</p>
@@ -199,11 +206,11 @@
            <code>&lt;code&gt;</code> tag for monospaced inline text.</p>
 
         <div class="notes">
-        </div>
+        </div> -->
     </div>
 
     <div class="step slide" data-rel-x="300" data-rel-y="1100" data-rotate="90">
-        <h1>Motion effects 101</h1>
+<!--         <h1>Motion effects 101</h1>
         <p>Items on the slide can</p>
         <p class="fly-in fly-out">Fly in</p>
         <p class="fade-in fade-out" style="transition-delay: 2s">Fade in</p>
@@ -229,7 +236,7 @@
         So basically every step element has one of three classes: `future`, `present` and `past`.
         Only one current step has the `present` class.
         </p>
-        </div>
+        </div> -->
     </div>
 
     <div id="addons" class="step slide title" data-rel-x="-300" data-rel-y="1100" data-rotate="120">
